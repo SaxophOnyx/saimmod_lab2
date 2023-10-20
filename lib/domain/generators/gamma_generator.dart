@@ -30,36 +30,4 @@ class GammaGenerator implements SequenceGenerator {
 
     return sequence;
   }
-
-  // @override
-  // List<double> get(int length) {
-  //   final List<double> sequence = List<double>.filled(length, 0);
-  //
-  //   for (int i = 0; i < length; ++i) {
-  //     final double u = random.nextDouble();
-  //     final double x = pow(-1 * log(1 - u), 1 / k) * lambda;
-  //
-  //     sequence[i] = x;
-  //   }
-  //
-  //   return sequence;
-  // }
-
-  // @override
-  // List<double> get(int length) {
-  //   final List<double> sequence = List<double>.filled(length, 0);
-  //
-  //   for (int i = 0; i < length; ++i) {
-  //     double sum = 0;
-  //
-  //     for (int j = 0; j < shape; ++j) {
-  //       sum -= log(random.nextDouble());
-  //     }
-  //
-  //     final double gamma = sum * scale;
-  //     sequence[i] = gamma;
-  //   }
-  //
-  //   return sequence;
-  // }
 }
